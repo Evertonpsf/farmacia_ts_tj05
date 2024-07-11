@@ -8,6 +8,7 @@ export function main() {
     //a variavel opcao percorre todo o menu
     let opcao: number;
 
+    const m1: Medicamento = new Medicamento(1,"teste")
 
 
     while (true) {

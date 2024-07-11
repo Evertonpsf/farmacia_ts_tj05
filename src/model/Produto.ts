@@ -1,9 +1,12 @@
 export abstract class Produto {
 
-    private _id: number;
-    private _nome: string;
+
+
+    
     private _tipo: number;
+    private _nome: string;
     private _preco: number;
+    private _id: number;
 
 
 
@@ -60,11 +63,11 @@ export abstract class Produto {
 
         switch (this._tipo) {
             case 1:
-                tipo = "Cosmeticos";
+                tipo = "Medicamentos";
                 break;
 
             case 2:
-                tipo = "Medicamentos";
+                tipo = "Cosmeticos";
                 break;
         }
 
@@ -72,7 +75,7 @@ export abstract class Produto {
         console.log("*****************************************************");
         console.log(`numero do id do produto: ${this._id}`);
         console.log(`nome do produto: ${this._nome}`);
-        console.log(`tipo do produto: ${this._tipo}`);
+        console.log(`tipo do produto: ${tipo}`);
         console.log(`preco do produto: ${this._preco.toFixed(2)}`);
 
 

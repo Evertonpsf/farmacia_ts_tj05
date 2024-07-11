@@ -3,11 +3,11 @@ import { Produto } from "../model/Produto";
 export interface ProdutoRepository {
 
     //inserindo os metodos de ciracao do CRUD
-    criarProduto(idProduto: number): void;
-    listarTodosProdutos(): void;
-    consultarProduto(tipo: number): void;
-    atualizarProduto(produto: Produto): void;
-    deletarProduto(numero: number): void;
+    procurarPorId(id: number): void;
+    listarTodos(): void;
+    cadastrar(produto: number): void;
+    atualizar(produto: Produto): void;
+    deletar(id: number): void;
 
 
 
